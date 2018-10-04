@@ -1,0 +1,13 @@
+---
+title: "First Page"
+permalink: /first/
+objectives:
+- "Objective A"
+- "Objective B"
+---
+
+This is the first page.
+
+```{r}
+1 + 2
+```

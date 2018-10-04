@@ -1,0 +1,15 @@
+---
+title: "Syllabus Example"
+permalink: "/"
+layout: "default"
+---
+<ol>
+  {%- for toc_entry in site.toc -%}
+    {%- for item in site.en -%}
+      {%- if toc_entry == item.permalink -%}
+  <li><a href="{{item.permalink | relative_url}}">{{item.title}}</a></li>
+        {% break %}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+</ol>

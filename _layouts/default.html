@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
+  </head>
+  <body>
+    <h1>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</h1>
+
+    {% if page.objectives %}
+    <div class="objectives">
+      <p><strong>Objectives</strong></p>
+      <ul>
+        {% for item in page.objectives %}
+        <li>{{item|markdownify||replace: "<p>", ""|replace: "</p>", ""}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {{content}}
+
+  </body>
+</html>

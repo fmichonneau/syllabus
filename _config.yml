@@ -1,0 +1,17 @@
+title: "Syllabus Example"
+author: "Greg Wilson"
+
+toc:
+- /first/
+- /second/
+
+collections:
+  en:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: en
+    values:
+      language: "en"
+      layout: "default"
